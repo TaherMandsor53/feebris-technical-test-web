@@ -1,0 +1,18 @@
+{
+  "name": "feebris-technical-task",
+  "version": "1.0.0",
+  "description": "The Feebris technical task",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "James Andres <james@feebris.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "chartjs-node-canvas": "^3.0.6",
+    "express": "^4.17.1",
+    "jest": "^26.5.3",
+    "supertest": "^5.0.0"
+  }
+}
