@@ -11,3 +11,9 @@ export function getPatientDetails() {
     type: types.GET_PATIENT_DETAILS_REQUEST,
   };
 }
+
+export function getPatientGpDetails() {
+  return {
+    type: types.GET_PATIENT_GP_DETAILS_REQUEST,
+  };
+}
