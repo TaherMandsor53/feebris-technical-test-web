@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { getCareHomeDetails, getPatientDetails, getPatientGpDetails } from '../../action/action';
 import { useDispatch, useSelector } from 'react-redux';
 import transformPatientDetails from '../../utlis/Transform';
@@ -29,13 +29,11 @@ export default function Home() {
         findPracticeDetails.patientPracticeDetails &&
         findPracticeDetails.patientPracticeDetails.length > 0 &&
         findPracticeDetails.patientPracticeDetails[0].name,
+      patientCheckup: findPracticeDetails?.patientCheckupDetails.map(element => element),
     };
   });
 
   const transformDetails = transformPatientDetails(careHomeDetails, filterPatientPracticeDetails);
-  console.log({ patientGpDetails });
-  console.log({ patientDetails });
-  console.log({ transformDetails });
 
   return (
     <div className="home-main">

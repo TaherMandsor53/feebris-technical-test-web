@@ -1,9 +1,14 @@
-.home-main {
+.home-main,
+.patient-main,
+.patient-main {
   margin: 10px;
-  .home-header {
+  .home-header,
+  .patient-header,
+  .patient-header {
     border-bottom: 1px solid #1c1c1c;
   }
-  .care-home-section {
+  .care-home-section,
+  .patient-section {
     h4 {
       margin: 0px;
     }

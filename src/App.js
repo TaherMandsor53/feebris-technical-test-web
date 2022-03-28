@@ -8,13 +8,10 @@ import PatientDetails from './components/home/PatitentDetails';
 
 function App() {
   const urlPath = window.location.pathname;
-  console.log({ urlPath });
   let isFlag = 0;
   if (urlPath === '/' || urlPath.indexOf('/patients/') > -1) {
     isFlag = 1;
   }
-  console.log({ isFlag });
-  console.log(urlPath.indexOf('/patients/') > -1);
   return (
     <div className="App">
       <Provider store={Store}>
